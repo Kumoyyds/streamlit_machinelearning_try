@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
 
 st.title('🎈 ml app')
 st.info('this is a machine learning mapp')
@@ -75,3 +76,14 @@ def target_encode(val):
   return target_mapper[val]
 
 y = Y.apply(target_encode)
+
+# then going to train the model
+# Model training and inference
+
+
+## Train the ML model
+clf = RandomForestClassifier()
+clf.fit(X, y)
+
+prediction = clf.predict(input_row)
+prediction_proba = clf.predict_proba(input_row)
