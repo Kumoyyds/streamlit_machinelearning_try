@@ -19,3 +19,8 @@ with st.expander('Data'):
   st.write('**Y**')
   Y = df[['species']]
   Y
+  
+with st.expander('Data visualization'):
+  # referring to https://docs.streamlit.io/develop/api-reference/charts/st.scatter_chart please
+  st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
+
