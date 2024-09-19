@@ -96,3 +96,5 @@ df_prediction_proba.rename(columns={0: 'Adelie',
 
 st.write('**heres the prediction result**')
 df_prediction_proba
+
+st.success('This is a success message!', icon="✅")
