@@ -61,7 +61,7 @@ df_penguins = pd.get_dummies(input_penguins, prefix=encode)
 # refer to https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html#reshaping-dummies
 
 with st.expander('dummies'):
-  st.write('**here's the penguins**')
+  st.write('**here we are**')
   df_penguins
 
   
