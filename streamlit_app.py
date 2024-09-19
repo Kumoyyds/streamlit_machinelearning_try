@@ -56,8 +56,8 @@ with st.expander('Input features'):
   st.write('**Combined penguins data**')
   input_penguins
   # encode
-  encode = ['island', 'sex']
-  df_penguins = pd.get_dummies(input_penguins, prefix=encode)
+encode = ['island', 'sex']
+df_penguins = pd.get_dummies(input_penguins, prefix=encode)
 # refer to https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html#reshaping-dummies
 
   
