@@ -59,6 +59,8 @@ with st.expander('Input features'):
 encode = ['island', 'sex']
 df_penguins = pd.get_dummies(input_penguins, prefix=encode)
 # refer to https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html#reshaping-dummies
+st.write('**here's the penguins**')
+df_penguins
 
   
 
